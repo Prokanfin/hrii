@@ -20,11 +20,20 @@ class Employee extends Model
             return $result;
         }   
     }
-    /*public function scoopSel_file($query,$id){
+    /*public function scopSel_file($query,$id){
         
         $result = $query->where($id)->addSelect('em_file')->first();
         
         return $result;
     }*/
+    
+    public function scopeSel_em_id($query,$id){
+        
+        $result = $query->where('em_id',$id)->first();
+        
+        return $result;
+        
+    }
+    
     
 }

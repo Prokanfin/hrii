@@ -21,3 +21,5 @@ Route::get('/logout', 'LoginController@logout');
 Route::any('/checkAuth', 'LoginController@checkAuth');
 
 Route::get('/dashboard', 'DashboardController@index');
+
+Route::any('/profile','EmployeeController@profile');
