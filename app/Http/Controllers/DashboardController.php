@@ -6,11 +6,18 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
+use App\Employee;
+
 class DashboardController extends Controller
 {
     //
-    public function index(){
+    public function index(Request $request){
         
-        return view('dashboard');
+        if($request->session()->has('em_id')){
+
+            return view('dashboard');
+        }else{
+            return redirect('/');
+        }   
     }
 }

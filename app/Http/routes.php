@@ -18,5 +18,6 @@
 Route::get('/','LoginController@index');
 Route::get('/login', 'LoginController@authen');
 Route::get('/logout', 'LoginController@logout');
+Route::any('/checkAuth', 'LoginController@checkAuth');
 
 Route::get('/dashboard', 'DashboardController@index');
