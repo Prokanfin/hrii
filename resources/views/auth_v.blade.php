@@ -62,9 +62,9 @@
         </div>
         <h3 class="font-size-24">Sign In</h3>
         <p>ลงชื่อเข้าใช้เพื่อเข้าถึงความฟินในเทคโนโลยีของเรา</p>
-        <form method="post" action="login-v2.html" autocomplete="off">
+        <form method="get" action="checkAuth" autocomplete="off">
           <div class="form-group form-material floating">
-            <input type="email" class="form-control empty" id="inputEmail" name="email">
+            <input type="text" class="form-control empty" id="inputEmail" name="username">
             <label class="floating-label" for="inputEmail">Username</label>
           </div>
           <div class="form-group form-material floating">
