@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
   <meta name="description" content="bootstrap admin template">
   <meta name="author" content="">
-  <title>Login | Remark hr system by kanfin</title>
+  <title>Login |  hr system by kanfin</title>
   <link rel="apple-touch-icon" href="assets/template/assets/images/apple-touch-icon.png">
   <link rel="shortcut icon" href="assets/template/assets/images/favicon.ico">
   <!-- Stylesheets -->
@@ -58,7 +58,7 @@
       <div class="page-login-main">
         <div class="brand visible-xs">
           <img class="brand-img" src="assets/template/assets/images/logo-blue@2x.png" alt="...">
-          <h3 class="brand-text font-size-40">Remark</h3>
+          <h3 class="brand-text font-size-40">KANFIN</h3>
         </div>
         <h3 class="font-size-24">Sign In</h3>
         <p>ลงชื่อเข้าใช้เพื่อเข้าถึงความฟินในเทคโนโลยีของเรา</p>
