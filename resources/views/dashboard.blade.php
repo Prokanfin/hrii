@@ -408,7 +408,7 @@
                       <div class="media">
                         <div class="media-left padding-right-10">
                           <span class="avatar avatar-sm avatar-online">
-                            <img src="../../../global/portraits/2.jpg" alt="..." />
+                            <img src="assets/template/global/portraits/2.jpg" alt="..." />
                             <i></i>
                           </span>
                         </div>
@@ -425,7 +425,7 @@
                       <div class="media">
                         <div class="media-left padding-right-10">
                           <span class="avatar avatar-sm avatar-off">
-                            <img src="../../../global/portraits/3.jpg" alt="..." />
+                            <img src="assets/template/global/portraits/3.jpg" alt="..." />
                             <i></i>
                           </span>
                         </div>
@@ -442,7 +442,7 @@
                       <div class="media">
                         <div class="media-left padding-right-10">
                           <span class="avatar avatar-sm avatar-busy">
-                            <img src="../../../global/portraits/4.jpg" alt="..." />
+                            <img src="assets/template/global/portraits/4.jpg" alt="..." />
                             <i></i>
                           </span>
                         </div>
@@ -486,7 +486,7 @@
             </ul>
           </li>
           <li id="toggleChat">
-            <a data-toggle="site-sidebar" href="javascript:void(0)" title="Chat" data-url="../site-sidebar.tpl">
+            <a data-toggle="site-sidebar" href="javascript:void(0)" title="Chat" data-url="assets/template/site-sidebar.tpl">
               <i class="icon md-comment" aria-hidden="true"></i>
             </a>
           </li>
