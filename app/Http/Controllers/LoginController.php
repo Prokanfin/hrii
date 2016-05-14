@@ -21,6 +21,8 @@ class LoginController extends Controller
     }
     
     public function authen(){
+        
+        
         return view('auth_v');
         
     }
