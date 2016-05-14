@@ -9,5 +9,9 @@ class Employee extends Model
     //
     protected $table = 'employee';
     
+    public function scopeCheckUser($query,$username,$password){
+        
+        
+    }
     
 }

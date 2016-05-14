@@ -21,9 +21,12 @@ class LoginController extends Controller
     }
     
     public function authen(){
-        
-        
         return view('auth_v');
+        
+    }
+    
+    public function checkAuth(Request $request){
+        
         
     }
     
@@ -33,4 +36,6 @@ class LoginController extends Controller
          
          return redirect('/');
     }
+    
+   
 }
