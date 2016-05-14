@@ -15,10 +15,8 @@
     return view('welcome');
 });*/
 
-Route::get('/', function() {
-    return view('dashboard');
-});
+Route::get('/','LoginController@index');
+Route::get('/login', 'LoginController@authen');
+Route::get('/logout', 'LoginController@logout');
 
-Route::get('/login', function() {
-    return view('login');
-});
+Route::get('/dashboard', 'DashboardController@index');
