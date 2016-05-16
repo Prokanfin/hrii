@@ -35,5 +35,32 @@ class Employee extends Model
         
     }
     
+    public function scopeSel_em_list($query){
+        
+        $result = $query->all();
+        
+        return $result;
+    }
+
+
+    public function  scopeIns_em($query,$data){
+        //return $data;
+        $result = $query->insert($data);
+        
+        return $result;    
+    }
+    
+    public function scopeUpdate_em_id($query,$id,$data){
+        
+        $result = $query->where('em_id',$id)->update($data);
+        
+        return $result;
+        
+    }
+    
+    public function scopeDelete_em_id($query,$id){
+        $result = $query->where('em_id',$id)->delete();
+    }
+    
     
 }

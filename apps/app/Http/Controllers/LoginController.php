@@ -22,14 +22,20 @@ class LoginController extends Controller
           
     }
     
-    public function authen(){
-        return view('auth_v');
+    public function authen(Request $request){
+        
+        if($request->session()->has('em_id')){
+            return redirect('/');
+        }else{
+            return view('auth_v');
+        }
         
     }
     
     public function checkAuth(Request $request){
             
-        
+       
+            
          if($result=Employee::CheckUser($request->input('username'),$request->input('password'))){
              
              if($result!='ไม่ผ่าน'){
@@ -48,12 +54,10 @@ class LoginController extends Controller
                  return redirect('/');
                  
              }
-         }
-            
-         	
-        
+ 
+               
+        }
     }
-    
     public function logout(){
         
          $data = session()->flush();
