@@ -6,7 +6,7 @@
 <!--navbar-->  
   @extends('layouts.master')
   @section('navbar')
- 
+
  <!--/navbar--> 
  
  <!--sidebar-->

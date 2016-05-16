@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="assets/template/global/css/bootstrap-extend.min.css">
         <link rel="stylesheet" href="assets/template/assets/css/site.min.css">
         <!-- Plugins -->
-        <link rel="stylesheet" href="assets/template/lobal/vendor/animsition/animsition.css">
+        <link rel="stylesheet" href="assets/template/global/vendor/animsition/animsition.css">
         <link rel="stylesheet" href="assets/template/global/vendor/asscrollable/asScrollable.css">
         <link rel="stylesheet" href="assets/template/global/vendor/switchery/switchery.css">
         <link rel="stylesheet" href="assets/template/global/vendor/intro-js/introjs.css">
@@ -22,6 +22,7 @@
         <link rel="stylesheet" href="assets/template/global/vendor/jquery-mmenu/jquery-mmenu.css">
         <link rel="stylesheet" href="assets/template/global/vendor/flag-icon-css/flag-icon.css">
         <link rel="stylesheet" href="assets/template/global/vendor/waves/waves.css">
+        <link rel="stylesheet" href="assets/template/assets/examples/css/pages/profile.css">
         <!-- Fonts -->
         <link rel="stylesheet" href="assets/template/global/fonts/material-design/material-design.min.css">
         <link rel="stylesheet" href="assets/template/global/fonts/brand-icons/brand-icons.min.css">
@@ -156,12 +157,6 @@
                                                     </li>
                                                     <li>
                                                         <a class="thumbnail margin-0" href="javascript:void(0)">
-                                                            <img class="width-full" src="assets/template/lobal/photos/placeholder.png" alt="..."
-                                                                 />
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="thumbnail margin-0" href="javascript:void(0)">
                                                             <img class="width-full" src="assets/template/global/photos/placeholder.png" alt="..."
                                                                  />
                                                         </a>
@@ -180,7 +175,13 @@
                                                     </li>
                                                     <li>
                                                         <a class="thumbnail margin-0" href="javascript:void(0)">
-                                                            <img class="width-full" src="assets/template/lobal/photos/placeholder.png" alt="..."
+                                                            <img class="width-full" src="assets/template/global/photos/placeholder.png" alt="..."
+                                                                 />
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="thumbnail margin-0" href="javascript:void(0)">
+                                                            <img class="width-full" src="assets/template/global/photos/placeholder.png" alt="..."
                                                                  />
                                                         </a>
                                                     </li>
@@ -292,7 +293,7 @@
                             </a>
                             <ul class="dropdown-menu" role="menu">
                                 <li role="presentation">
-                                    <a href="javascript:void(0)" role="menuitem"><i class="icon md-account" aria-hidden="true"></i> Profile</a>
+                                    <a href="profile" role="menuitem"><i class="icon md-account" aria-hidden="true"></i> Profile</a>
                                 </li>
                                 <li role="presentation">
                                     <a href="javascript:void(0)" role="menuitem"><i class="icon md-card" aria-hidden="true"></i> Billing</a>
@@ -1408,9 +1409,9 @@
         
   @section('footer')      
   <footer class="site-footer">
-    <div class="site-footer-legal">© 2016 <a href="http://themeforest.net/item/remark-responsive-bootstrap-admin-template/11989202">Remark</a></div>
+    <div class="site-footer-legal">© 2016 <a href="http://themeforest.net/item/remark-responsive-bootstrap-admin-template/11989202">kanfin.com</a></div>
     <div class="site-footer-right">
-      Crafted with <i class="red-600 icon md-favorite"></i> by <a href="http://themeforest.net/user/amazingSurge">amazingSurge</a>
+      Crafted with <i class="red-600 icon md-favorite"></i> by <a href="http://themeforest.net/user/amazingSurge">tb</a>
     </div>
   </footer>
         @show
@@ -1447,6 +1448,7 @@
   <script src="assets/template/global/js/components/slidepanel.js"></script>
   <script src="assets/template/global/js/components/switchery.js"></script>
   <script src="assets/template/global/js/components/tabs.js"></script>
+   <script src="assets/template/global/js/plugins/responsive-tabs.js"></script>
   <script>
   (function(document, window, $) {
     'use strict';
