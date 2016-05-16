@@ -17,12 +17,11 @@
             <div class="widget-header">
               <div class="widget-header-content">
                 <a class="avatar avatar-lg" href="javascript:void(0)">
-                  <img src="assets/template/global/portraits/5.jpg" alt="...">
+                  <img src="upload/{{$result['em_file']}}" alt="...">
                 </a>
-                <h4 class="profile-user">Terrance arnold</h4>
-                <p class="profile-job">Art director</p>
-                <p>Hi! I'm Adrian the Senior UI Designer at AmazingSurge. We hope
-                  you enjoy the design and quality of Social.</p>
+                <h4 class="profile-user">{{$result['em_name']}}</h4>
+                <p class="profile-job">{{$result['em_role']}}</p>
+                <p>{{$result['em_intro']}}</p>
                 <div class="profile-social">
                   <a class="icon bd-twitter" href="javascript:void(0)"></a>
                   <a class="icon bd-facebook" href="javascript:void(0)"></a>
@@ -36,15 +35,15 @@
               <div class="row no-space">
                 <div class="col-xs-4">
                   <strong class="profile-stat-count">260</strong>
-                  <span>Follower</span>
+                  <span>Project</span>
                 </div>
                 <div class="col-xs-4">
                   <strong class="profile-stat-count">180</strong>
-                  <span>Following</span>
+                  <span>Incomplete</span>
                 </div>
                 <div class="col-xs-4">
                   <strong class="profile-stat-count">2000</strong>
-                  <span>Tweets</span>
+                  <span>Complete</span>
                 </div>
               </div>
             </div>
@@ -203,114 +202,35 @@
                   <a class="btn btn-block btn-default profile-readMore" href="javascript:void(0)"
                   role="button">Show more</a>
                 </div>
+                  
+                  
+           <!--ส่วน Profile-->       
                 <div class="tab-pane animation-slide-left" id="profile" role="tabpanel">
                   <ul class="list-group">
-                    <li class="list-group-item">
-                      <div class="media media-lg">
-                        <div class="media-left">
-                          <a class="avatar" href="javascript:void(0)">
-                            <img class="img-responsive" src="assets/template/global/portraits/5.jpg" alt="...">
-                          </a>
-                        </div>
-                        <div class="media-body">
-                          <h4 class="media-heading">Terrance Arnold
-                            <span>posted a new blog</span>
-                          </h4>
-                          <small>active 14 minutes ago</small>
-                          <div class="profile-brief">
-                            <div class="media">
-                              <a class="media-left">
-                                <img class="media-object" src="assets/template/global/photos/placeholder.png" alt="...">
-                              </a>
-                              <div class="media-body padding-left-20">
-                                <h4 class="media-heading">Getting Started</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-                                  elit. Integer nec odio. Praesent libero. Sed
-                                  cursus ante dapibus diam. Sed nisi. Nulla quis
-                                  sem at nibh elementum imperdiet. Duis sagittis
-                                  ipsum. Praesent mauris.</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+                      <br>
+                 
+                      <label><b>Personal Data</b></label>
+              <div class="container">      
+                      <div class="row">
+                          <div class="col-sm-2">Name:</div>
+                          <div class="col-sm-4">{{$result['em_name']}}</div>
                       </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="media">
-                        <div class="media-left">
-                          <a class="avatar" href="javascript:void(0)">
-                            <img class="img-responsive" src="assets/template/global/portraits/2.jpg" alt="...">
-                          </a>
-                        </div>
-                        <div class="media-body">
-                          <h4 class="media-heading">Ida Fleming
-                            <span>posted an updated</span>
-                          </h4>
-                          <small>active 14 minutes ago</small>
-                          <div class="profile-brief">“Check if it can be corrected with overflow : hidden”</div>
-                        </div>
+                      
+                      <div class="row">
+                          <div class="col-sm-2">Name:</div>
+                          <div class="col-sm-4">{{$result['em_name']}}</div>
                       </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="media">
-                        <div class="media-left">
-                          <a class="avatar" href="javascript:void(0)">
-                            <img class="img-responsive" src="assets/template/global/portraits/4.jpg" alt="...">
-                          </a>
-                        </div>
-                        <div class="media-body">
-                          <h4 class="media-heading">Owen Hunt
-                            <span>posted a new note</span>
-                          </h4>
-                          <small>active 14 minutes ago</small>
-                          <div class="profile-brief">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Integer nec odio. Praesent libero. Sed cursus ante
-                            dapibus diam. Sed nisi. Nulla quis sem at nibh elementum
-                            imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce
-                            nec tellus sed augue semper porta. Mauris massa.</div>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="media">
-                        <div class="media-left">
-                          <a class="avatar" href="javascript:void(0)">
-                            <img class="img-responsive" src="assets/template/global/portraits/2.jpg" alt="...">
-                          </a>
-                        </div>
-                        <div class="media-body">
-                          <h4 class="media-heading">Ida Fleming
-                            <span>posted an new activity comment</span>
-                          </h4>
-                          <small>active 14 minutes ago</small>
-                          <div class="profile-brief">Cras sit amet nibh libero, in gravida nulla. Nulla vel
-                            metus.</div>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="media">
-                        <div class="media-left">
-                          <a class="avatar" href="javascript:void(0)">
-                            <img class="img-responsive" src="assets/template/global/portraits/3.jpg" alt="...">
-                          </a>
-                        </div>
-                        <div class="media-body">
-                          <h4 class="media-heading">Julius
-                            <span>uploaded 4 photos</span>
-                          </h4>
-                          <small>active 14 minutes ago</small>
-                          <div class="profile-brief">
-                            <img class="profile-uploaded" src="assets/template/global/photos/placeholder.png" alt="...">
-                            <img class="profile-uploaded" src="assets/template/global/photos/placeholder.png" alt="...">
-                            <img class="profile-uploaded" src="assets/template/global/photos/placeholder.png" alt="...">
-                            <img class="profile-uploaded" src="assets/template/global/photos/placeholder.png" alt="...">
-                          </div>
-                        </div>
-                      </div>
-                    </li>
+              </div>         
+                      
+                   
+                   
+                    
+                   
+                    
                   </ul>
                 </div>
+           <!--/ส่วน Profile--> 
+           
                 <div class="tab-pane animation-slide-left" id="messages" role="tabpanel">
                   <ul class="list-group">
                     <li class="list-group-item">
