@@ -39,11 +39,11 @@
                         </div>
                         <div class="col-xs-4">
                             <strong class="profile-stat-count">180</strong>
-                            <span>Incomplete</span>
+                            <span>Incompleted</span>
                         </div>
                         <div class="col-xs-4">
                             <strong class="profile-stat-count">2000</strong>
-                            <span>Complete</span>
+                            <span>Completed</span>
                         </div>
                     </div>
                 </div>
