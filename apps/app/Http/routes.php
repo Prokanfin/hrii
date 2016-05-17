@@ -28,5 +28,6 @@ Route::group(['middleware' => 'web'], function () {
     Route::any('/insert_em','EmployeeController@insert');
     Route::any('/update_em','EmployeeController@update');
     Route::any('/delete_em','EmployeeController@delete');
+    Route::get('/employlist','EmployeeController@employee_list');
     
 });

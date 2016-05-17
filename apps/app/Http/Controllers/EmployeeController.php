@@ -41,7 +41,8 @@ class EmployeeController extends Controller
             
             $result=Employee::Sel_em_list();
             
-            return view()->with('result',$result);
+            return $result;
+            //return view()->with('result',$result);
         }
         
     }
@@ -84,6 +85,13 @@ class EmployeeController extends Controller
         }
     }
     
+    function sel_photo(Request $request){
+        $result = Employee::sel_photo_em($request->em_id);
+        
+        return $result;
+    }
+
+
     public function delete(Request $request){
         
         $result=Employee::Delete_em_id($request->em_id);

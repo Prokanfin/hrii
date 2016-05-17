@@ -37,11 +37,23 @@ class Employee extends Model
     
     public function scopeSel_em_list($query){
         
-        $result = $query->all();
+        $result = $query->addSelect('em_id','em_number','em_name','em_tel','em_mail')->get();
         
         return $result;
     }
-
+    
+    public function scopeSel_photo_em($query,$id){
+        
+        $result = $query->where('em_id',$id)->addSelect('em_file')->first();
+        
+        return $result;
+    }
+    
+    public function scopeUpdate_photo_em($query,$id,$file){
+        $result = $query->where('em_id',$id)->update('em_file',$file);
+        
+        return $result;
+    }
 
     public function  scopeIns_em($query,$data){
         //return $data;
