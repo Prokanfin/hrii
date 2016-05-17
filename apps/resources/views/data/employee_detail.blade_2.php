@@ -209,83 +209,76 @@
                             <ul class="list-group">
                                 <br>
 
-                                <div class="contianer">
-                                    <b>Employee Data</b>
+                                <label><b>Employee Data</b></label>
+                                <div class="container">      
                                     <div class="row">
                                         <div class="col-sm-2">Name:</div>
                                         <div class="col-sm-4">{{$result['em_name']}}</div>
+                                    </div>
+
+                                    <div class="row">
                                         <div class="col-sm-2">Work Status:</div>
                                         <div class="col-sm-4">{{$result['em_status']}}</div>
                                     </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-2">Employee Role:</div>
+                                        <div class="col-sm-4">{{$result['em_role']}}</div>
+                                    </div>
+                                    
                                     <div class="row">
                                         <div class="col-sm-2">User Name:</div>
                                         <div class="col-sm-4">{{$result['em_number']}}</div>
+                                    </div>
+                                    
+                                     <div class="row">
                                         <div class="col-sm-2">Audit Number:</div>
                                         <div class="col-sm-4">{{$result['em_audit_number']}}</div>
                                     </div>
-                                    <br>
-                                    <b>Personal Data</b>
-                                    <div class="row">
+                                </div>         
+                                <br>
+                                <label><b>Personal Data</b></label>
+                                <div class="container">
+                                      <div class="row">
                                         <div class="col-sm-2">Nation ID:</div>
                                         <div class="col-sm-4">{{$result['em_nationn_id']}}</div>
+                                    </div>
+                                    
+                                    <div class="row">
                                         <div class="col-sm-2">Marie Status:</div>
                                         <div class="col-sm-4">{{$result['em_marie_status']}}</div>
                                     </div>
+                                    
                                     <div class="row">
-                                        <div class="col-sm-2">Address 1:</div>
+                                        <div class="col-sm-2">Adds1:</div>
                                         <div class="col-sm-4">{{$result['em_addr']}}</div>
-                                        <div class="col-sm-2">Address 2:</div>
-                                        <div class="col-sm-4">{{$result['em_addr_curent']}}</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-2">Tel:</div>
-                                        <div class="col-sm-4">{{$result['em_tel']}}</div>
-                                        <div class="col-sm-2">E-mail:</div>
-                                        <div class="col-sm-4">{{$result['em_mail']}}</div>
-                                    </div>
-                                     <div class="row">
-                                        <div class="col-sm-2">Co Worker:</div>
-                                        <div class="col-sm-4">{{$result['em_friend_name']}}</div>
-                                        <div class="col-sm-2">Co Worker Tel:</div>
-                                        <div class="col-sm-4">{{$result['em_friend_tel']}}</div>
-                                    </div>
-                                    <br>
-                                    <b>Education Data</b>
-                                     <div class="row">
-                                        <div class="col-sm-2">Level:</div>
-                                        <div class="col-sm-4">{{$result['em_level']}}</div>
-                                        <div class="col-sm-2">Major:</div>
-                                        <div class="col-sm-4">{{$result['em_major']}}</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-2">Gpa:</div>
-                                        <div class="col-sm-4">{{$result['em_gpa']}}</div>
-                                        <div class="col-sm-2">Insutution:</div>
-                                        <div class="col-sm-4">{{$result['em_insutution']}}</div>
-                                    </div>
-                                    <br>
-                                    <b>Work Data</b>
-                                    <div class="row">
-                                        <div class="col-sm-2">Register Date:</div>
-                                        <div class="col-sm-4">{{$result['em_start_work']}}</div>
-                                        <div class="col-sm-2">Salary Rate:</div>
-                                        <div class="col-sm-4">{{$result['em_salary_rate']}}</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-2">Salary per Date:</div>
-                                        <div class="col-sm-4">{{$result['em_salary_day']}}</div>
-                                        <div class="col-sm-2">Work per Date:</div>
-                                        <div class="col-sm-4">{{$result['em_day_work']}}</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-2">Benefit:</div>
-                                        <div class="col-sm-4">{{$result['em_benefit']}}</div>
-                                        <div class="col-sm-2">Note:</div>
-                                        <div class="col-sm-4">{{$result['em_note']}}</div>
                                     </div>
                                     
-                                </div> 
-
+                                    <div class="row">
+                                        <div class="col-sm-2">Adds2:</div>
+                                        <div class="col-sm-4">{{$result['em_addr_curent']}}</div>
+                                    </div>
+                                    
+                                     <div class="row">
+                                        <div class="col-sm-2">Tel:</div>
+                                        <div class="col-sm-4">{{$result['em_tel']}}</div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="col-sm-2">E-Mail:</div>
+                                        <div class="col-sm-4">{{$result['em_mail']}}</div>
+                                    </div>
+                                    
+                                      <div class="row">
+                                        <div class="col-sm-2">Friend Name:</div>
+                                        <div class="col-sm-4">{{$result['em_friend_name']}}</div>
+                                    </div>
+                                    
+                                      <div class="row">
+                                        <div class="col-sm-2">Friend Tel:</div>
+                                        <div class="col-sm-4">{{$result['em_friend_tel']}}</div>
+                                    </div>
+                                </div>
 
 
 
