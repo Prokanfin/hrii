@@ -514,79 +514,87 @@
         <div class="site-menubar">
             <ul class="site-menu">
                 <li class="site-menu-item">
-                    <a class="animsition-link" href="../index.html">
+                    <a class="animsition-link" href="dashboard">
                         <i class="site-menu-icon md-view-dashboard" aria-hidden="true"></i>
                         <span class="site-menu-title">Dashboard</span>
                     </a>
                 </li>
+                
+                
+                <!--System Data-->
                 <li class="site-menu-item has-sub">
                     <a href="javascript:void(0)">
-                        <i class="site-menu-icon md-view-compact" aria-hidden="true"></i>
-                        <span class="site-menu-title">Layouts</span>
+                        <i class="site-menu-icon icon md-developer-board" aria-hidden="true"></i>
+                        <span class="site-menu-title">System Data</span>
                         <span class="site-menu-arrow"></span>
                     </a>
                     <ul class="site-menu-sub">
                         <li class="site-menu-item">
                             <a class="animsition-link" href="../layouts/menu-collapsed.html">
-                                <span class="site-menu-title">Menu Collapsed</span>
+                                <span class="site-menu-title">Customer</span>
                             </a>
                         </li>
                         <li class="site-menu-item">
-                            <a class="animsition-link" href="../layouts/menu-expended.html">
-                                <span class="site-menu-title">Menu Expended</span>
-                            </a>
-                        </li>
-                        <li class="site-menu-item">
-                            <a class="animsition-link" href="../layouts/grids.html">
-                                <span class="site-menu-title">Grid Scaffolding</span>
-                            </a>
-                        </li>
-                        <li class="site-menu-item">
-                            <a class="animsition-link" href="../layouts/layout-grid.html">
-                                <span class="site-menu-title">Layout Grid</span>
-                            </a>
-                        </li>
-                        <li class="site-menu-item">
-                            <a class="animsition-link" href="../layouts/headers.html">
-                                <span class="site-menu-title">Different Headers</span>
-                            </a>
-                        </li>
-                        <li class="site-menu-item">
-                            <a class="animsition-link" href="../layouts/panel-transition.html">
-                                <span class="site-menu-title">Panel Transition</span>
-                            </a>
-                        </li>
-                        <li class="site-menu-item">
-                            <a class="animsition-link" href="../layouts/boxed.html">
-                                <span class="site-menu-title">Boxed Layout</span>
-                            </a>
-                        </li>
-                        <li class="site-menu-item">
-                            <a class="animsition-link" href="../layouts/two-columns.html">
-                                <span class="site-menu-title">Two Columns</span>
-                            </a>
-                        </li>
-                        <li class="site-menu-item">
-                            <a class="animsition-link" href="../layouts/bordered-header.html">
-                                <span class="site-menu-title">Bordered Header</span>
-                            </a>
-                        </li>
-                        <li class="site-menu-item">
-                            <a class="animsition-link" href="../layouts/page-aside-fixed.html">
-                                <span class="site-menu-title">Page Aside Fixed</span>
+                            <a class="animsition-link" href="../layouts/menu-collapsed.html">
+                                <span class="site-menu-title">Employee</span>
                             </a>
                         </li>
                     </ul>
                 </li>
-               
-               
-               
-             
-             
-              
-             
-              
-               
+
+                <!--Project-->
+                <li class="site-menu-item">
+                    <a class="animsition-link" href="dashboard">
+                        <i class="site-menu-icon icon md-collection-text" aria-hidden="true"></i>
+                        <span class="site-menu-title">Project</span>
+                    </a>
+                </li>
+
+
+
+                <!--Work-->
+                <li class="site-menu-item has-sub">
+                    <a href="javascript:void(0)">
+                        <i class="site-menu-icon icon md-assignment" aria-hidden="true"></i>
+                        <span class="site-menu-title">Work</span>
+                        <span class="site-menu-arrow"></span>
+                    </a>
+                    <ul class="site-menu-sub">
+                        <li class="site-menu-item">
+                            <a class="animsition-link" href="../layouts/menu-collapsed.html">
+                                <span class="site-menu-title">Account</span>
+                            </a>
+                        </li>
+                        <li class="site-menu-item">
+                            <a class="animsition-link" href="../layouts/menu-collapsed.html">
+                                <span class="site-menu-title">Tax</span>
+                            </a>
+                        </li>
+                        <li class="site-menu-item">
+                            <a class="animsition-link" href="../layouts/menu-collapsed.html">
+                                <span class="site-menu-title">Audit</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+
+
+                <!--Security-->
+                <li class="site-menu-item">
+                    <a class="animsition-link" href="dashboard">
+                        <i class="site-menu-icon icon md-shield-check" aria-hidden="true"></i>
+                        <span class="site-menu-title">Security</span>
+                    </a>
+                </li>
+
+
+
+
+
+
+
+
             </ul>
         </div>
         @show
@@ -638,7 +646,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="../index.html">
+                            <a href="dashboard">
                                 <i class="icon md-view-dashboard"></i>
                                 <span>Dashboard</span>
                             </a>
@@ -651,62 +659,62 @@
 
         <div class="page animsition">
             <div class="page-content">
-                   @yield('content')
+                @yield('content')
             </div>
         </div>
-        
-        
-        
-  @section('footer')      
-  <footer class="site-footer">
-    <div class="site-footer-legal">© 2016 <a href="http://themeforest.net/item/remark-responsive-bootstrap-admin-template/11989202">kanfin.com</a></div>
-    <div class="site-footer-right">
-      Crafted with <i class="red-600 icon md-favorite"></i> by <a href="http://themeforest.net/user/amazingSurge">tb</a>
-    </div>
-  </footer>
+
+
+
+        @section('footer')
+        <footer class="site-footer">
+            <div class="site-footer-legal">© 2016 <a href="http://themeforest.net/item/remark-responsive-bootstrap-admin-template/11989202">kanfin.com</a></div>
+            <div class="site-footer-right">
+                Crafted with <i class="red-600 icon md-favorite"></i> by <a href="http://themeforest.net/user/amazingSurge">tb</a>
+            </div>
+        </footer>
         @show
-        
-        
-        
-        
-         <!-- Core  -->
-  <script src="assets/template/global/vendor/jquery/jquery.js"></script>
-  <script src="assets/template/global/vendor/bootstrap/bootstrap.js"></script>
-  <script src="assets/template/global/vendor/animsition/animsition.js"></script>
-  <script src="assets/template/global/vendor/asscroll/jquery-asScroll.js"></script>
-  <script src="assets/template/global/vendor/mousewheel/jquery.mousewheel.js"></script>
-  <script src="assets/template/global/vendor/asscrollable/jquery.asScrollable.all.js"></script>
-  <script src="assets/template/global/vendor/ashoverscroll/jquery-asHoverScroll.js"></script>
-  <script src="assets/template/global/vendor/waves/waves.js"></script>
-  <!-- Plugins -->
-  <script src="assets/template/global/vendor/jquery-mmenu/jquery.mmenu.min.all.js"></script>
-  <script src="assets/template/global/vendor/switchery/switchery.min.js"></script>
-  <script src="assets/template/global/vendor/intro-js/intro.js"></script>
-  <script src="assets/template/global/vendor/screenfull/screenfull.js"></script>
-  <script src="assets/template/global/vendor/slidepanel/jquery-slidePanel.js"></script>
-  <!-- Scripts -->
-  <script src="assets/template/global/js/core.js"></script>
-  <script src="assets/template/assets/js/site.js"></script>
-  <script src="assets/template/assets/js/sections/menu.js"></script>
-  <script src="assets/template/assets/js/sections/menubar.js"></script>
-  <script src="assets/template/assets/js/sections/gridmenu.js"></script>
-  <script src="assets/template/assets/js/sections/sidebar.js"></script>
-  <script src="assets/template/global/js/configs/config-colors.js"></script>
-  <script src="assets/template/assets/js/configs/config-tour.js"></script>
-  <script src="assets/template/global/js/components/asscrollable.js"></script>
-  <script src="assets/template/global/js/components/animsition.js"></script>
-  <script src="assets/template/global/js/components/slidepanel.js"></script>
-  <script src="assets/template/global/js/components/switchery.js"></script>
-  <script src="assets/template/global/js/components/tabs.js"></script>
-   <script src="assets/template/global/js/plugins/responsive-tabs.js"></script>
-  <script>
-  (function(document, window, $) {
-    'use strict';
-    var Site = window.Site;
-    $(document).ready(function() {
-      Site.run();
-    });
-  })(document, window, jQuery);
-  </script>
+
+
+
+
+        <!-- Core  -->
+        <script src="assets/template/global/vendor/jquery/jquery.js"></script>
+        <script src="assets/template/global/vendor/bootstrap/bootstrap.js"></script>
+        <script src="assets/template/global/vendor/animsition/animsition.js"></script>
+        <script src="assets/template/global/vendor/asscroll/jquery-asScroll.js"></script>
+        <script src="assets/template/global/vendor/mousewheel/jquery.mousewheel.js"></script>
+        <script src="assets/template/global/vendor/asscrollable/jquery.asScrollable.all.js"></script>
+        <script src="assets/template/global/vendor/ashoverscroll/jquery-asHoverScroll.js"></script>
+        <script src="assets/template/global/vendor/waves/waves.js"></script>
+        <!-- Plugins -->
+        <script src="assets/template/global/vendor/jquery-mmenu/jquery.mmenu.min.all.js"></script>
+        <script src="assets/template/global/vendor/switchery/switchery.min.js"></script>
+        <script src="assets/template/global/vendor/intro-js/intro.js"></script>
+        <script src="assets/template/global/vendor/screenfull/screenfull.js"></script>
+        <script src="assets/template/global/vendor/slidepanel/jquery-slidePanel.js"></script>
+        <!-- Scripts -->
+        <script src="assets/template/global/js/core.js"></script>
+        <script src="assets/template/assets/js/site.js"></script>
+        <script src="assets/template/assets/js/sections/menu.js"></script>
+        <script src="assets/template/assets/js/sections/menubar.js"></script>
+        <script src="assets/template/assets/js/sections/gridmenu.js"></script>
+        <script src="assets/template/assets/js/sections/sidebar.js"></script>
+        <script src="assets/template/global/js/configs/config-colors.js"></script>
+        <script src="assets/template/assets/js/configs/config-tour.js"></script>
+        <script src="assets/template/global/js/components/asscrollable.js"></script>
+        <script src="assets/template/global/js/components/animsition.js"></script>
+        <script src="assets/template/global/js/components/slidepanel.js"></script>
+        <script src="assets/template/global/js/components/switchery.js"></script>
+        <script src="assets/template/global/js/components/tabs.js"></script>
+        <script src="assets/template/global/js/plugins/responsive-tabs.js"></script>
+        <script>
+                  (function (document, window, $) {
+                      'use strict';
+                      var Site = window.Site;
+                      $(document).ready(function () {
+                          Site.run();
+                      });
+                  })(document, window, jQuery);
+        </script>
     </body>
 </html>
