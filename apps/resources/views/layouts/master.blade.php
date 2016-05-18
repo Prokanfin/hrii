@@ -7,25 +7,25 @@
         <meta name="description" content="bootstrap admin template">
         <meta name="author" content="">
         <title>Blank | Remark Admin Template</title>
-        <link rel="apple-touch-icon" href="assets/template/assets/images/apple-touch-icon.png">
-        <link rel="shortcut icon" href="assets/template/assets/images/favicon.ico">
+        <link rel="apple-touch-icon" href="{{asset('assets/template/assets/images/apple-touch-icon.png')}}">
+        <link rel="shortcut icon" href="{{asset('assets/template/assets/images/favicon.ico')}}">
         <!-- Stylesheets -->
-        <link rel="stylesheet" href="assets/template/global/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/template/global/css/bootstrap-extend.min.css">
-        <link rel="stylesheet" href="assets/template/assets/css/site.min.css">
+        <link rel="stylesheet" href="{{asset('assets/template/global/css/bootstrap.min.css')}}">
+        <link rel="stylesheet" href="{{asset('assets/template/global/css/bootstrap-extend.min.css')}}">
+        <link rel="stylesheet" href="{{asset('assets/template/assets/css/site.min.css')}}">
         <!-- Plugins -->
-        <link rel="stylesheet" href="assets/template/global/vendor/animsition/animsition.css">
-        <link rel="stylesheet" href="assets/template/global/vendor/asscrollable/asScrollable.css">
-        <link rel="stylesheet" href="assets/template/global/vendor/switchery/switchery.css">
-        <link rel="stylesheet" href="assets/template/global/vendor/intro-js/introjs.css">
-        <link rel="stylesheet" href="assets/template/global/vendor/slidepanel/slidePanel.css">
-        <link rel="stylesheet" href="assets/template/global/vendor/jquery-mmenu/jquery-mmenu.css">
-        <link rel="stylesheet" href="assets/template/global/vendor/flag-icon-css/flag-icon.css">
-        <link rel="stylesheet" href="assets/template/global/vendor/waves/waves.css">
-        <link rel="stylesheet" href="assets/template/assets/examples/css/pages/profile.css">
+        <link rel="stylesheet" href="{{asset('assets/template/global/vendor/animsition/animsition.css')}}">
+        <link rel="stylesheet" href="{{asset('assets/template/global/vendor/asscrollable/asScrollable.css')}}">
+        <link rel="stylesheet" href="{{asset('assets/template/global/vendor/switchery/switchery.css')}}">
+        <link rel="stylesheet" href="{{asset('assets/template/global/vendor/intro-js/introjs.css')}}">
+        <link rel="stylesheet" href="{{asset('assets/template/global/vendor/slidepanel/slidePanel.css')}}">
+        <link rel="stylesheet" href="{{asset('assets/template/global/vendor/jquery-mmenu/jquery-mmenu.css')}}">
+        <link rel="stylesheet" href="{{asset('assets/template/global/vendor/flag-icon-css/flag-icon.css')}}">
+        <link rel="stylesheet" href="{{asset('assets/template/global/vendor/waves/waves.css')}}">
+        <link rel="stylesheet" href="{{asset('assets/template/assets/examples/css/pages/profile.css')}}">
         <!-- Fonts -->
-        <link rel="stylesheet" href="assets/template/global/fonts/material-design/material-design.min.css">
-        <link rel="stylesheet" href="assets/template/global/fonts/brand-icons/brand-icons.min.css">
+        <link rel="stylesheet" href="{{asset('assets/template/global/fonts/material-design/material-design.min.css')}}">
+        <link rel="stylesheet" href="{{asset('assets/template/global/fonts/brand-icons/brand-icons.min.css')}}">
         <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic'>
         <!--[if lt IE 9]>
           <script src="../../../global/vendor/html5shiv/html5shiv.min.js"></script>
@@ -35,8 +35,8 @@
           <script src="../../../global/vendor/respond/respond.min.js"></script>
           <![endif]-->
         <!-- Scripts -->
-        <script src="assets/template/global/vendor/modernizr/modernizr.js"></script>
-        <script src="assets/template/global/vendor/breakpoints/breakpoints.js"></script>
+        <script src="{{asset('assets/template/global/vendor/modernizr/modernizr.js')}}"></script>
+        <script src="{{asset('assets/template/global/vendor/breakpoints/breakpoints.js')}}"></script>
         <script>
             Breakpoints();
         </script>
@@ -55,7 +55,7 @@
                     <i class="icon md-more" aria-hidden="true"></i>
                 </button>
                 <div class="navbar-brand navbar-brand-center site-gridmenu-toggle" data-toggle="gridmenu">
-                    <img class="navbar-brand-logo" src="assets/template/assets/images/logo.png" title="Remark">
+                    <img class="navbar-brand-logo" src="{{asset('assets/template/assets/images/logo.png')}}" title="Remark">
                     <span class="navbar-brand-text hidden-xs"> Remark</span>
                 </div>
                 <button type="button" class="navbar-toggle collapsed" data-target="#site-navbar-search"
@@ -287,13 +287,14 @@
                             <a class="navbar-avatar dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false"
                                data-animation="scale-up" role="button">
                                 <span class="avatar avatar-online">
-                                    <img src="upload/{{ Session::get('em_file')}}" alt="...">
+                                    <?php $empPic = Session::get('em_file');?>
+                                    <img src='{{asset("upload/$empPic")}}' alt="...">
                                     <i></i>
                                 </span>
                             </a>
                             <ul class="dropdown-menu" role="menu">
                                 <li role="presentation">
-                                    <a href="profile" role="menuitem"><i class="icon md-account" aria-hidden="true"></i> Profile</a>
+                                    <a href="{{asset('employee/profile')}}" role="menuitem"><i class="icon md-account" aria-hidden="true"></i> Profile</a>
                                 </li>
                                 <li role="presentation">
                                     <a href="javascript:void(0)" role="menuitem"><i class="icon md-card" aria-hidden="true"></i> Billing</a>
@@ -514,7 +515,7 @@
         <div class="site-menubar">
             <ul class="site-menu">
                 <li class="site-menu-item">
-                    <a class="animsition-link" href="dashboard">
+                    <a class="animsition-link" href="{{asset('dashboard')}}">
                         <i class="site-menu-icon md-view-dashboard" aria-hidden="true"></i>
                         <span class="site-menu-title">Dashboard</span>
                     </a>
@@ -678,35 +679,35 @@
 
 
         <!-- Core  -->
-        <script src="assets/template/global/vendor/jquery/jquery.js"></script>
-        <script src="assets/template/global/vendor/bootstrap/bootstrap.js"></script>
-        <script src="assets/template/global/vendor/animsition/animsition.js"></script>
-        <script src="assets/template/global/vendor/asscroll/jquery-asScroll.js"></script>
-        <script src="assets/template/global/vendor/mousewheel/jquery.mousewheel.js"></script>
-        <script src="assets/template/global/vendor/asscrollable/jquery.asScrollable.all.js"></script>
-        <script src="assets/template/global/vendor/ashoverscroll/jquery-asHoverScroll.js"></script>
-        <script src="assets/template/global/vendor/waves/waves.js"></script>
+        <script src="{{asset('assets/template/global/vendor/jquery/jquery.js')}}"></script>
+        <script src="{{asset('assets/template/global/vendor/bootstrap/bootstrap.js')}}"></script>
+        <script src="{{asset('assets/template/global/vendor/animsition/animsition.js')}}"></script>
+        <script src="{{asset('assets/template/global/vendor/asscroll/jquery-asScroll.js')}}"></script>
+        <script src="{{asset('assets/template/global/vendor/mousewheel/jquery.mousewheel.js')}}"></script>
+        <script src="{{asset('assets/template/global/vendor/asscrollable/jquery.asScrollable.all.js')}}"></script>
+        <script src="{{asset('assets/template/global/vendor/ashoverscroll/jquery-asHoverScroll.js')}}"></script>
+        <script src="{{asset('assets/template/global/vendor/waves/waves.js')}}"></script>
         <!-- Plugins -->
-        <script src="assets/template/global/vendor/jquery-mmenu/jquery.mmenu.min.all.js"></script>
-        <script src="assets/template/global/vendor/switchery/switchery.min.js"></script>
-        <script src="assets/template/global/vendor/intro-js/intro.js"></script>
-        <script src="assets/template/global/vendor/screenfull/screenfull.js"></script>
-        <script src="assets/template/global/vendor/slidepanel/jquery-slidePanel.js"></script>
+        <script src="{{asset('assets/template/global/vendor/jquery-mmenu/jquery.mmenu.min.all.js')}}"></script>
+        <script src="{{asset('assets/template/global/vendor/switchery/switchery.min.js')}}"></script>
+        <script src="{{asset('assets/template/global/vendor/intro-js/intro.js')}}"></script>
+        <script src="{{asset('assets/template/global/vendor/screenfull/screenfull.js')}}"></script>
+        <script src="{{asset('assets/template/global/vendor/slidepanel/jquery-slidePanel.js')}}"></script>
         <!-- Scripts -->
-        <script src="assets/template/global/js/core.js"></script>
-        <script src="assets/template/assets/js/site.js"></script>
-        <script src="assets/template/assets/js/sections/menu.js"></script>
-        <script src="assets/template/assets/js/sections/menubar.js"></script>
-        <script src="assets/template/assets/js/sections/gridmenu.js"></script>
-        <script src="assets/template/assets/js/sections/sidebar.js"></script>
-        <script src="assets/template/global/js/configs/config-colors.js"></script>
-        <script src="assets/template/assets/js/configs/config-tour.js"></script>
-        <script src="assets/template/global/js/components/asscrollable.js"></script>
-        <script src="assets/template/global/js/components/animsition.js"></script>
-        <script src="assets/template/global/js/components/slidepanel.js"></script>
-        <script src="assets/template/global/js/components/switchery.js"></script>
-        <script src="assets/template/global/js/components/tabs.js"></script>
-        <script src="assets/template/global/js/plugins/responsive-tabs.js"></script>
+        <script src="{{asset('assets/template/global/js/core.js')}}"></script>
+        <script src="{{asset('assets/template/assets/js/site.js')}}"></script>
+        <script src="{{asset('assets/template/assets/js/sections/menu.js')}}"></script>
+        <script src="{{asset('assets/template/assets/js/sections/menubar.js')}}"></script>
+        <script src="{{asset('assets/template/assets/js/sections/gridmenu.js')}}"></script>
+        <script src="{{asset('assets/template/assets/js/sections/sidebar.js')}}"></script>
+        <script src="{{asset('assets/template/global/js/configs/config-colors.js')}}"></script>
+        <script src="{{asset('assets/template/assets/js/configs/config-tour.js')}}"></script>
+        <script src="{{asset('assets/template/global/js/components/asscrollable.js')}}"></script>
+        <script src="{{asset('assets/template/global/js/components/animsition.js')}}"></script>
+        <script src="{{asset('assets/template/global/js/components/slidepanel.js')}}"></script>
+        <script src="{{asset('assets/template/global/js/components/switchery.js')}}"></script>
+        <script src="{{asset('assets/template/global/js/components/tabs.js')}}"></script>
+        <script src="{{asset('assets/template/global/js/plugins/responsive-tabs.js')}}"></script>
         <script>
                   (function (document, window, $) {
                       'use strict';

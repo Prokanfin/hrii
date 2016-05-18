@@ -17,7 +17,7 @@
                 <div class="widget-header">
                     <div class="widget-header-content">
                         <a class="avatar avatar-lg" href="javascript:void(0)">
-                            <img src="upload/{{$result['em_file']}}" alt="...">
+                            <img src="{{asset('upload')}}/{{$result['em_file']}}">
                         </a>
                         <h4 class="profile-user">{{$result['em_name']}}</h4>
                         <p class="profile-job">{{$result['em_role']}}</p>
@@ -73,6 +73,8 @@
                             </ul>
                         </li>
                     </ul>
+                    
+                    <!--เนื้อหา Activity-->
                     <div class="tab-content">
                         <div class="tab-pane active animation-slide-left" id="activities" role="tabpanel">
                             <ul class="list-group">
@@ -80,121 +82,15 @@
                                     <div class="media">
                                         <div class="media-left">
                                             <a class="avatar" href="javascript:void(0)">
-                                                <img class="img-responsive" src="assets/template/global/portraits/2.jpg" alt="...">
+                                               ใส่รูป
                                             </a>
                                         </div>
                                         <div class="media-body">
-                                            <h4 class="media-heading">Ida Fleming
+                                            <h4 class="media-heading">ชื่อ
                                                 <span>posted an updated</span>
                                             </h4>
                                             <small>active 14 minutes ago</small>
                                             <div class="profile-brief">“Check if it can be corrected with overflow : hidden”</div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="media">
-                                        <div class="media-left">
-                                            <a class="avatar" href="javascript:void(0)">
-                                                <img class="img-responsive" src="assets/template/global/portraits/3.jpg" alt="...">
-                                            </a>
-                                        </div>
-                                        <div class="media-body">
-                                            <h4 class="media-heading">Julius
-                                                <span>uploaded 4 photos</span>
-                                            </h4>
-                                            <small>active 14 minutes ago</small>
-                                            <div class="profile-brief">
-                                                <img class="profile-uploaded" src="assets/template/global/photos/placeholder.png" alt="...">
-                                                <img class="profile-uploaded" src="assets/template/global/photos/placeholder.png" alt="...">
-                                                <img class="profile-uploaded" src="assets/template/global/photos/placeholder.png" alt="...">
-                                                <img class="profile-uploaded" src="assets/template/global/photos/placeholder.png" alt="...">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="media">
-                                        <div class="media-left">
-                                            <a class="avatar" href="javascript:void(0)">
-                                                <img class="img-responsive" src="assets/template/global/portraits/4.jpg" alt="...">
-                                            </a>
-                                        </div>
-                                        <div class="media-body">
-                                            <h4 class="media-heading">Owen Hunt
-                                                <span>posted a new note</span>
-                                            </h4>
-                                            <small>active 14 minutes ago</small>
-                                            <div class="profile-brief">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                Integer nec odio. Praesent libero. Sed cursus ante
-                                                dapibus diam. Sed nisi. Nulla quis sem at nibh elementum
-                                                imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce
-                                                nec tellus sed augue semper porta. Mauris massa.</div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="media media-lg">
-                                        <div class="media-left">
-                                            <a class="avatar" href="javascript:void(0)">
-                                                <img class="img-responsive" src="assets/template/global/portraits/5.jpg" alt="...">
-                                            </a>
-                                        </div>
-                                        <div class="media-body">
-                                            <h4 class="media-heading">Terrance Arnold
-                                                <span>posted a new blog</span>
-                                            </h4>
-                                            <small>active 14 minutes ago</small>
-                                            <div class="profile-brief">
-                                                <div class="media">
-                                                    <a class="media-left">
-                                                        <img class="media-object" src="assets/template/global/photos/placeholder.png" alt="...">
-                                                    </a>
-                                                    <div class="media-body padding-left-20">
-                                                        <h4 class="media-heading">Getting Started</h4>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-                                                            elit. Integer nec odio. Praesent libero. Sed
-                                                            cursus ante dapibus diam. Sed nisi. Nulla quis
-                                                            sem at nibh elementum imperdiet. Duis sagittis
-                                                            ipsum. Praesent mauris.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="media">
-                                        <div class="media-left">
-                                            <a class="avatar" href="javascript:void(0)">
-                                                <img class="img-responsive" src="assets/template/global/portraits/2.jpg" alt="...">
-                                            </a>
-                                        </div>
-                                        <div class="media-body">
-                                            <h4 class="media-heading">Ida Fleming
-                                                <span>posted an new activity comment</span>
-                                            </h4>
-                                            <small>active 14 minutes ago</small>
-                                            <div class="profile-brief">Cras sit amet nibh libero, in gravida nulla. Nulla vel
-                                                metus.</div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="media">
-                                        <div class="media-left">
-                                            <a class="avatar" href="javascript:void(0)">
-                                                <img class="img-responsive" src="assets/template/global/portraits/3.jpg" alt="...">
-                                            </a>
-                                        </div>
-                                        <div class="media-body">
-                                            <h4 class="media-heading">Julius
-                                                <span>posted an updated</span>
-                                            </h4>
-                                            <small>active 14 minutes ago</small>
-                                            <div class="profile-brief">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                Integer nec odio. Praesent libero. Sed cursus ante
-                                                dapibus diam.</div>
                                         </div>
                                     </div>
                                 </li>
@@ -292,93 +188,14 @@
                             </ul>
                         </div>
                         <!--/ส่วน Profile--> 
-
+                        
+                        <!--ส่วนข้อความ-->
                         <div class="tab-pane animation-slide-left" id="messages" role="tabpanel">
                             <ul class="list-group">
-                                <li class="list-group-item">
-                                    <div class="media">
-                                        <div class="media-left">
-                                            <a class="avatar" href="javascript:void(0)">
-                                                <img class="img-responsive" src="assets/template/global/portraits/2.jpg" alt="...">
-                                            </a>
-                                        </div>
-                                        <div class="media-body">
-                                            <h4 class="media-heading">Ida Fleming
-                                                <span>posted an updated</span>
-                                            </h4>
-                                            <small>active 14 minutes ago</small>
-                                            <div class="profile-brief">“Check if it can be corrected with overflow : hidden”</div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="media media-lg">
-                                        <div class="media-left">
-                                            <a class="avatar" href="javascript:void(0)">
-                                                <img class="img-responsive" src="assets/template/global/portraits/5.jpg" alt="...">
-                                            </a>
-                                        </div>
-                                        <div class="media-body">
-                                            <h4 class="media-heading">Terrance Arnold
-                                                <span>posted a new blog</span>
-                                            </h4>
-                                            <small>active 14 minutes ago</small>
-                                            <div class="profile-brief">
-                                                <div class="media">
-                                                    <a class="media-left">
-                                                        <img class="media-object" src="assets/template/global/photos/placeholder.png" alt="...">
-                                                    </a>
-                                                    <div class="media-body padding-left-20">
-                                                        <h4 class="media-heading">Getting Started</h4>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-                                                            elit. Integer nec odio. Praesent libero. Sed
-                                                            cursus ante dapibus diam. Sed nisi. Nulla quis
-                                                            sem at nibh elementum imperdiet. Duis sagittis
-                                                            ipsum. Praesent mauris.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="media">
-                                        <div class="media-left">
-                                            <a class="avatar" href="javascript:void(0)">
-                                                <img class="img-responsive" src="assets/template/global/portraits/4.jpg" alt="...">
-                                            </a>
-                                        </div>
-                                        <div class="media-body">
-                                            <h4 class="media-heading">Owen Hunt
-                                                <span>posted a new note</span>
-                                            </h4>
-                                            <small>active 14 minutes ago</small>
-                                            <div class="profile-brief">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                Integer nec odio. Praesent libero. Sed cursus ante
-                                                dapibus diam. Sed nisi. Nulla quis sem at nibh elementum
-                                                imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce
-                                                nec tellus sed augue semper porta. Mauris massa.</div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="media">
-                                        <div class="media-left">
-                                            <a class="avatar" href="javascript:void(0)">
-                                                <img class="img-responsive" src="assets/template/global/portraits/3.jpg" alt="...">
-                                            </a>
-                                        </div>
-                                        <div class="media-body">
-                                            <h4 class="media-heading">Julius
-                                                <span>posted an updated</span>
-                                            </h4>
-                                            <small>active 14 minutes ago</small>
-                                            <div class="profile-brief">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                Integer nec odio. Praesent libero. Sed cursus ante
-                                                dapibus diam.</div>
-                                        </div>
-                                    </div>
-                                </li>
+                                
+                                <!--เนื้อหาเหมือน Activity แต่เอามาจากกล่องข้อความ-->
+                             
+                                
                             </ul>
                         </div>
                     </div>
