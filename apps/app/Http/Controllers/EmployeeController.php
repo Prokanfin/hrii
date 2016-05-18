@@ -41,8 +41,8 @@ class EmployeeController extends Controller
             
             $result=Employee::Sel_em_list();
             
-            return $result;
-            //return view()->with('result',$result);
+            //return $result;
+            return view('data/employee_list')->with('result',$result);
         }
         
     }

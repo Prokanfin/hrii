@@ -23,11 +23,22 @@ Route::group(['middleware' => 'web'], function () {
     Route::any('/checkAuth', 'LoginController@checkAuth');
 
     Route::get('/dashboard', 'DashboardController@index');
-
-    Route::any('/profile','EmployeeController@profile');
-    Route::any('/insert_em','EmployeeController@insert');
-    Route::any('/update_em','EmployeeController@update');
-    Route::any('/delete_em','EmployeeController@delete');
-    Route::get('/employlist','EmployeeController@employee_list');
+    
+    Route::group(['prefix' => 'employee'], function () {
+        Route::any('/profile','EmployeeController@profile');
+        Route::any('/insert_em','EmployeeController@insert');
+        Route::any('/update_em','EmployeeController@update');
+        Route::any('/delete_em','EmployeeController@delete');
+        Route::get('/list','EmployeeController@employee_list');
+    });
+    
+    Route::group(['prefix' => 'customer'], function () {
+       Route::any('/detail','CustomerController@detail');
+       Route::get('/list','CustomerController@customer_list');
+       Route::any('/add','CustomerController@insert');
+       Route::get('/reg','CustomerController@reg');
+       
+    });
+    
     
 });
