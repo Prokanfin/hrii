@@ -17,7 +17,7 @@
                 <div class="widget-header">
                     <div class="widget-header-content">
                         <a class="avatar avatar-lg" href="javascript:void(0)">
-                            <img src="{{asset('upload')}}/{{$result['em_file']}}">
+                            <img src="{{asset('apps/upload')}}/{{$result['em_file']}}">
                         </a>
                         <h4 class="profile-user">{{$result['em_name']}}</h4>
                         <p class="profile-job">{{$result['em_role']}}</p>

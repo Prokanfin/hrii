@@ -308,7 +308,7 @@ Breakpoints();
                                data-animation="scale-up" role="button">
                                 <span class="avatar avatar-online">
                                     <?php $empPic = Session::get('em_file'); ?>
-                                    <img src='{{asset("upload/$empPic")}}' alt="...">
+                                    <img src='{{asset("apps/upload/$empPic")}}' alt="...">
                                     <i></i>
                                 </span>
                             </a>
@@ -506,7 +506,7 @@ Breakpoints();
                             </ul>
                         </li>
                         <li id="toggleChat">
-                            <a data-toggle="site-sidebar" href="javascript:void(0)" title="Chat" data-url="assets/template/site-sidebar.tpl">
+                            <a data-toggle="site-sidebar" href="javascript:void(0)" title="Chat" data-url="{{asset('assets/template/site-sidebar.tpl')}}">
                                 <i class="icon md-comment" aria-hidden="true"></i>
                             </a>
                         </li>
@@ -551,12 +551,12 @@ Breakpoints();
                     </a>
                     <ul class="site-menu-sub">
                         <li class="site-menu-item">
-                            <a class="animsition-link" href="../layouts/menu-collapsed.html">
+                            <a class="animsition-link" href="{{asset('customer/list')}}">
                                 <span class="site-menu-title">Customer</span>
                             </a>
                         </li>
                         <li class="site-menu-item">
-                            <a class="animsition-link" href="../layouts/menu-collapsed.html">
+                            <a class="animsition-link" href="{{asset('employee/list')}}">
                                 <span class="site-menu-title">Employee</span>
                             </a>
                         </li>
