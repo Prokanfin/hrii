@@ -37,6 +37,8 @@
         <!-- Scripts -->
 
 
+
+
         @if(Request::is('dashboard'))
         <!--Calendar ใน Dashboard-->
         <link rel="stylesheet" href="{{asset('assets/template/global/vendor/fullcalendar/fullcalendar.css')}}">
@@ -48,7 +50,11 @@
         @endif
 
 
-
+        @if(Request::is('employee/list') || Request::is('customer/list'))
+        <link rel="stylesheet" href="{{asset('assets/template/global/vendor/filament-tablesaw/tablesaw.css')}}">
+        <link rel="stylesheet" href="{{asset('assets/template/global/vendor/slidepanel/slidePanel.css')}}">
+        <link rel="stylesheet" href="{{asset('assets/template/assets/examples/css/apps/contacts.css')}}">
+        @endif
 
 
 
@@ -732,28 +738,45 @@ Breakpoints();
 
         @if(Request::is('dashboard'))
         <!--Calendar JS-->
-            <!--Plugins-->
-            <script src="{{asset('assets/template/global/vendor/jquery-ui/jquery-ui.min.js')}}"></script>
-            <script src="{{asset('assets/template/global/vendor/moment/moment.min.js')}}"></script>
-            <script src="{{asset('assets/template/global/vendor/fullcalendar/fullcalendar.js')}}"></script>
-            <script src="{{asset('assets/template/global/vendor/jquery-selective/jquery-selective.min.js')}}"></script>
-            <script src="{{asset('assets/template/global/vendor/bootstrap-datepicker/bootstrap-datepicker.js')}}"></script>
-            <script src="{{asset('assets/template/global/vendor/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js')}}"></script>
-            <script src="{{asset('assets/template/global/vendor/bootbox/bootbox.js')}}"></script>
-            <!--Plugins-->
+        <!--Plugins-->
+        <script src="{{asset('assets/template/global/vendor/jquery-ui/jquery-ui.min.js')}}"></script>
+        <script src="{{asset('assets/template/global/vendor/moment/moment.min.js')}}"></script>
+        <script src="{{asset('assets/template/global/vendor/fullcalendar/fullcalendar.js')}}"></script>
+        <script src="{{asset('assets/template/global/vendor/jquery-selective/jquery-selective.min.js')}}"></script>
+        <script src="{{asset('assets/template/global/vendor/bootstrap-datepicker/bootstrap-datepicker.js')}}"></script>
+        <script src="{{asset('assets/template/global/vendor/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js')}}"></script>
+        <script src="{{asset('assets/template/global/vendor/bootbox/bootbox.js')}}"></script>
+        <!--Plugins-->
 
 
-            <script src="{{asset('assets/template/global/js/components/tabs.js')}}"></script>
-            <script src="{{asset('assets/template/global/js/components/bootstrap-touchspin.js')}}"></script>
-            <script src="{{asset('assets/template/global/js/components/bootstrap-datepicker.js')}}"></script>
-            <script src="{{asset('assets/template/global/js/components/material.js')}}"></script>
-            <script src="{{asset('assets/template/global/js/plugins/action-btn.js')}}"></script>
-            <script src="{{asset('assets/template/global/js/components/bootbox.js')}}"></script>
-            <script src="{{asset('assets/template/assets/js/app.js')}}"></script>
-            <script src="{{asset('assets/template/assets/examples/js/apps/calendar.js')}}"></script>
+        <script src="{{asset('assets/template/global/js/components/tabs.js')}}"></script>
+        <script src="{{asset('assets/template/global/js/components/bootstrap-touchspin.js')}}"></script>
+        <script src="{{asset('assets/template/global/js/components/bootstrap-datepicker.js')}}"></script>
+        <script src="{{asset('assets/template/global/js/components/material.js')}}"></script>
+        <script src="{{asset('assets/template/global/js/plugins/action-btn.js')}}"></script>
+        <script src="{{asset('assets/template/global/js/components/bootbox.js')}}"></script>
+        <script src="{{asset('assets/template/assets/js/app.js')}}"></script>
+        <script src="{{asset('assets/template/assets/examples/js/apps/calendar.js')}}"></script>
         <!--Calendar JS-->
         @endif
 
+        @if(Request::is('employee/list') || Request::is('customer/list'))
+        <!--หน้า employee/list หรือ customer/list JS-->
+        <script src="{{asset('assets/template/global/vendor/aspaginator/jquery.asPaginator.min.js')}}"></script>
+        <script src="{{asset('assets/template/global/vendor/jquery-placeholder/jquery.placeholder.js')}}"></script>
+        <script src="{{asset('assets/template/global/vendor/bootbox/bootbox.js')}}"></script>
+        <script src="{{asset('assets/template/global/js/plugins/sticky-header.js')}}"></script>
+        <script src="{{asset('assets/template/global/js/plugins/action-btn.js')}}"></script>
+        <script src="{{asset('assets/template/global/js/plugins/selectable.js')}}"></script>
+        <script src="{{asset('assets/template/global/js/components/aspaginator.js')}}"></script>
+        <script src="{{asset('assets/template/global/js/components/animate-list.js')}}"></script>
+        <script src="{{asset('assets/template/global/js/components/jquery-placeholder.js')}}"></script>
+        <script src="{{asset('assets/template/global/js/components/material.js')}}"></script>
+        <script src="{{asset('assets/template/global/js/components/selectable.js')}}"></script>
+        <script src="{{asset('assets/template/global/js/components/bootbox.js')}}"></script>
+        <script src="{{asset('assets/template/assets/js/app.js')}}"></script>
+        <script src="{{asset('assets/template/assets/examples/js/apps/contacts.js')}}"></script>
+        @endif
 
         <script>
 (function (document, window, $) {
