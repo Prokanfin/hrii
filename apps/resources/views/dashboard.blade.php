@@ -22,7 +22,7 @@
 @section('content')
 <div class="row">
     <!--Calendar-->
-    <div class="col-sm-8">
+    <div class="col-md-7">
         <div class="panel">
             <div class="panel-body container-fluid">
                 <div class="calendar-container">
@@ -302,19 +302,31 @@
 
 
     </div> <!--/Calendar-->
-    <!--กล่อง 4 กล่อง-->
-    <div class="4">
-        กล่อง 4 กล่อง
-        @if(Request::is('dashboard'))
-        hello
-        @endif
+    <!--กล่อง เตือนความจำ-->
+    <div class="col-md-5">
+       <div class="widget widget-shadow">
+            <div class="widget-content white bg-twitter padding-20 height-full">
+              <h3 class="white margin-top-0">Memo</h3>
+              <small>21 May, 2016 via mobile</small>
+              <div class="margin-top-10">
+                <i class="icon md-memory font-size-26"></i>
+                <ul class="list-inline pull-right margin-top-15">
+               <!--   <li>
+                    <i class="icon md-favorite"></i> 598
+                  </li>
+                  <li>
+                    <i class="icon md-thumb-up"></i> 96
+                  </li> -->
+                </ul>
+              </div>
+            </div>
+          </div>
 
-    </div>
-</div>   
+    </div> <!--.col-md-5-->
+</div>
 @endsection
 
-<!-- /Page -->
-<!-- End Page -->
-<!-- Footer -->
-@section('footer')
+
+
+
 
