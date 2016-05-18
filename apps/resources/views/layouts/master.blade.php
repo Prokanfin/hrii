@@ -35,10 +35,30 @@
           <script src="../../../global/vendor/respond/respond.min.js"></script>
           <![endif]-->
         <!-- Scripts -->
+
+
+        @if(Request::is('dashboard'))
+        <!--Calendar ใน Dashboard-->
+        <link rel="stylesheet" href="{{asset('assets/template/global/vendor/fullcalendar/fullcalendar.css')}}">
+        <link rel="stylesheet" href="{{asset('assets/template/global/vendor/bootstrap-datepicker/bootstrap-datepicker.css')}}">
+        <link rel="stylesheet" href="{{asset('assets/template/global/vendor/bootstrap-touchspin/bootstrap-touchspin.css')}}">
+        <link rel="stylesheet" href="{{asset('assets/template/global/vendor/jquery-selective/jquery-selective.css')}}">
+        <link rel="stylesheet" href="{{asset('assets/template/assets/examples/css/apps/calendar.css')}}">
+        <!--/Calendar-->
+        @endif
+
+
+
+
+
+
+
+
+
         <script src="{{asset('assets/template/global/vendor/modernizr/modernizr.js')}}"></script>
         <script src="{{asset('assets/template/global/vendor/breakpoints/breakpoints.js')}}"></script>
         <script>
-            Breakpoints();
+Breakpoints();
         </script>
     </head>
     <body class="site-navbar-small ">
@@ -287,7 +307,7 @@
                             <a class="navbar-avatar dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false"
                                data-animation="scale-up" role="button">
                                 <span class="avatar avatar-online">
-                                    <?php $empPic = Session::get('em_file');?>
+                                    <?php $empPic = Session::get('em_file'); ?>
                                     <img src='{{asset("upload/$empPic")}}' alt="...">
                                     <i></i>
                                 </span>
@@ -514,14 +534,14 @@
         @section('sidebar')
         <div class="site-menubar">
             <ul class="site-menu">
-                <li class="site-menu-item">
+                <li class="site-menu-item  @if(Request::is('dashboard')) active @endif">  <!--Active อันที่เลือก-->
                     <a class="animsition-link" href="{{asset('dashboard')}}">
                         <i class="site-menu-icon md-view-dashboard" aria-hidden="true"></i>
                         <span class="site-menu-title">Dashboard</span>
                     </a>
                 </li>
-                
-                
+
+
                 <!--System Data-->
                 <li class="site-menu-item has-sub">
                     <a href="javascript:void(0)">
@@ -708,14 +728,41 @@
         <script src="{{asset('assets/template/global/js/components/switchery.js')}}"></script>
         <script src="{{asset('assets/template/global/js/components/tabs.js')}}"></script>
         <script src="{{asset('assets/template/global/js/plugins/responsive-tabs.js')}}"></script>
+
+
+        @if(Request::is('dashboard'))
+        <!--Calendar JS-->
+            <!--Plugins-->
+            <script src="{{asset('assets/template/global/vendor/jquery-ui/jquery-ui.min.js')}}"></script>
+            <script src="{{asset('assets/template/global/vendor/moment/moment.min.js')}}"></script>
+            <script src="{{asset('assets/template/global/vendor/fullcalendar/fullcalendar.js')}}"></script>
+            <script src="{{asset('assets/template/global/vendor/jquery-selective/jquery-selective.min.js')}}"></script>
+            <script src="{{asset('assets/template/global/vendor/bootstrap-datepicker/bootstrap-datepicker.js')}}"></script>
+            <script src="{{asset('assets/template/global/vendor/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js')}}"></script>
+            <script src="{{asset('assets/template/global/vendor/bootbox/bootbox.js')}}"></script>
+            <!--Plugins-->
+
+
+            <script src="{{asset('assets/template/global/js/components/tabs.js')}}"></script>
+            <script src="{{asset('assets/template/global/js/components/bootstrap-touchspin.js')}}"></script>
+            <script src="{{asset('assets/template/global/js/components/bootstrap-datepicker.js')}}"></script>
+            <script src="{{asset('assets/template/global/js/components/material.js')}}"></script>
+            <script src="{{asset('assets/template/global/js/plugins/action-btn.js')}}"></script>
+            <script src="{{asset('assets/template/global/js/components/bootbox.js')}}"></script>
+            <script src="{{asset('assets/template/assets/js/app.js')}}"></script>
+            <script src="{{asset('assets/template/assets/examples/js/apps/calendar.js')}}"></script>
+        <!--Calendar JS-->
+        @endif
+
+
         <script>
-                  (function (document, window, $) {
-                      'use strict';
-                      var Site = window.Site;
-                      $(document).ready(function () {
-                          Site.run();
-                      });
-                  })(document, window, jQuery);
+(function (document, window, $) {
+    'use strict';
+    var Site = window.Site;
+    $(document).ready(function () {
+        Site.run();
+    });
+})(document, window, jQuery);
         </script>
     </body>
 </html>
