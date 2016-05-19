@@ -47,6 +47,9 @@
         <link rel="stylesheet" href="{{asset('assets/template/global/vendor/jquery-selective/jquery-selective.css')}}">
         <link rel="stylesheet" href="{{asset('assets/template/assets/examples/css/apps/calendar.css')}}">
         <!--/Calendar-->
+        
+          <!--markdown Editor-->
+          <!--  <link rel="stylesheet" href="{{asset('assets/template/global/vendor/bootstrap-markdown/bootstrap-markdown.css')}}">  -->
         @endif
 
 
@@ -719,6 +722,8 @@ Breakpoints();
         <script src="{{asset('assets/template/global/vendor/intro-js/intro.js')}}"></script>
         <script src="{{asset('assets/template/global/vendor/screenfull/screenfull.js')}}"></script>
         <script src="{{asset('assets/template/global/vendor/slidepanel/jquery-slidePanel.js')}}"></script>
+        
+              
         <!-- Scripts -->
         <script src="{{asset('assets/template/global/js/core.js')}}"></script>
         <script src="{{asset('assets/template/assets/js/site.js')}}"></script>
@@ -733,12 +738,13 @@ Breakpoints();
         <script src="{{asset('assets/template/global/js/components/slidepanel.js')}}"></script>
         <script src="{{asset('assets/template/global/js/components/switchery.js')}}"></script>
         <script src="{{asset('assets/template/global/js/components/tabs.js')}}"></script>
-        <script src="{{asset('assets/template/global/js/plugins/responsive-tabs.js')}}"></script>
+       <script src="{{asset('assets/template/global/js/plugins/responsive-tabs.js')}}"></script>
 
 
         @if(Request::is('dashboard'))
         <!--Calendar JS-->
         <!--Plugins-->
+         
         <script src="{{asset('assets/template/global/vendor/jquery-ui/jquery-ui.min.js')}}"></script>
         <script src="{{asset('assets/template/global/vendor/moment/moment.min.js')}}"></script>
         <script src="{{asset('assets/template/global/vendor/fullcalendar/fullcalendar.js')}}"></script>
@@ -746,6 +752,11 @@ Breakpoints();
         <script src="{{asset('assets/template/global/vendor/bootstrap-datepicker/bootstrap-datepicker.js')}}"></script>
         <script src="{{asset('assets/template/global/vendor/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js')}}"></script>
         <script src="{{asset('assets/template/global/vendor/bootbox/bootbox.js')}}"></script>
+                <!--Mark Down Editor
+                      <script src="{{asset('assets/template/global/vendor/bootstrap-markdown/bootstrap-markdown.js')}}"></script>
+                       <script src="{{asset('assets/template/global/vendor/marked/marked.js')}}"></script>
+                       <script src="{{asset('assets/template/global/vendor/to-markdown/to-markdown.js')}}"></script> -->
+                 <!--/Mark Down Editor-->
         <!--Plugins-->
 
 

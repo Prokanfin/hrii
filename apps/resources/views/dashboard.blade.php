@@ -320,7 +320,22 @@
                 </ul>
               </div>
             </div>
-          </div>
+        </div>
+        
+      
+        
+        <!--Mark down Editor
+        <div class="panel-body">
+              <form>
+                
+                
+                  <div class="example" >
+                      <textarea rows="8"  data-provide="markdown" data-iconlibrary="fa" data-savable="true"></textarea>
+                </div>
+              </form>
+            </div>   -->
+        
+        <!--/Mark Down Editor-->
 
     </div> <!--.col-md-5-->
 </div>
