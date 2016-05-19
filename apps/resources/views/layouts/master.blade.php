@@ -50,7 +50,7 @@
         @endif
 
 
-        @if(Request::is('employee/list') || Request::is('customer/list'))
+        @if( (Request::is('customer/list')) || (Request::is('employee/list'))   )
         <link rel="stylesheet" href="{{asset('assets/template/global/vendor/filament-tablesaw/tablesaw.css')}}">
         <link rel="stylesheet" href="{{asset('assets/template/global/vendor/slidepanel/slidePanel.css')}}">
         <link rel="stylesheet" href="{{asset('assets/template/assets/examples/css/apps/contacts.css')}}">
