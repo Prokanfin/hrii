@@ -24,10 +24,30 @@ class Customer extends Model
         return $result;
     }
     
-     public function  scopeIns_cus($query,$data){
+    public function scopeSel_cus_name($query,$name){
+        
+         $result = $query->where('customer_name',$name)->addSelect('customer_id')->first();
+        
+        return $result;
+    }
+
+
+    public function  scopeIns_cus($query,$data){
         //return $data;
         $result = $query->insert($data);
         
         return $result;    
+    }
+    
+    public function scopeUpdate_cus_id($query,$id,$data){
+        
+        $result = $query->where('customer_id',$id)->update($data);
+        
+        return $result;
+        
+    }
+    
+    public function scopeDelete_cus_id($query,$id){
+        $result = $query->where('customer_id',$id)->delete();
     }
 }
