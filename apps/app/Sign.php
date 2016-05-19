@@ -15,4 +15,9 @@ class Sign extends Model
         
         return $result;    
     }
+    
+    public function scopeDelete_sign_cusId($query,$id){
+        $result = $query->where('customer_id',$id)->delete();
+    }
+    
 }

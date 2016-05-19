@@ -117,6 +117,35 @@ class CustomerController extends Controller {
         }
     }
     
+    public function update(Resquest $request){
+        
+        $dataArray = array(
+                "customer_name" => $request->input('txtcName'),
+                "customer_status" => $request->input('txtcStatus'),
+                "customer_tax_id" => $request->input('txtcTaxId'),
+                "customer_band_id" => $request->input('txtcBandId'),
+                "customer_addr_th" => $request->input('txtcAddrTh'),
+                "customer_addr_en" => $request->input('txtcAddrEn'),
+                "customer_tel" => $request->input('txtcTel'),
+                "customer_fax" => $request->input('txtcFax'),
+                "customer_web" => $request->input('txtcWeb'),
+                "customer_mail" => $request->input('txtcMail'),
+                "customer_condition" => $request->input('txtcCondition'),
+                "customer_coor_name" => $request->input('txtcCoorName'),
+                "customer_coor_tel" => $request->input('txtcCoorTel'),
+                "customer_coor_mail" => $request->input('txtcCoorMail'),
+                "customer_lat" => $request->input('txtcLat'),
+                "customer_long" => $request->input('txtcLong'),
+                "customer_note" => $request->input('txtcNote'),
+                "customer_level" => $request->input('selcLevel')
+                
+            );
+        $result = Customer::Update_cus_id($request->input('customer_id'),$dataArray);
+        
+        
+    }
+
+
     public function delete(Request $request) {
 
         $result = Customer::Delete_cus_id($request->input('customer_id'));
